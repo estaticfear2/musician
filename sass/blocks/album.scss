@@ -1,0 +1,42 @@
+.album {
+  padding: 0 24px 0 25px;
+  margin-bottom: 51px;
+  
+  &__year {
+    font-family: $opensansbold;
+    font-size: 7.6px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  &__line {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: black;
+  }
+  
+  &__title {
+    margin-top: 4px;
+    font-family: $opensansbold;
+    font-size: 7.6px;
+    text-transform: uppercase;
+  }
+  
+  &__info {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.018em;
+  }
+  
+  &__descr {
+    letter-spacing: 0.018em;
+    color: #aaaaaa;
+    text-align: justify;
+  }
+  
+  &__play-btn {
+    margin: 0 auto;
+    margin-top: 23px;
+  }
+}

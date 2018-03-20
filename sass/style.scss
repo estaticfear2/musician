@@ -1,0 +1,15 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "scaffolding";
+
+///* ----------index.html--------------*/
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/hero";
+@import "blocks/page-content";
+@import "blocks/section";
+@import "blocks/album";
+@import "blocks/btn";

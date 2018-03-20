@@ -1,0 +1,30 @@
+.btn {
+  display: block;
+  width: 98px;
+  padding: 7px 0 9px;
+  font-family: $opensansbold;
+  color: white;
+  background-color: #c9c2ca;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  &--bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  &--bg1 {
+    background-image: url("../img/btn-mobile-bg1.jpg");
+  }
+  
+  &--bg2 {
+    background-image: url("../img/btn-mobile-bg2.jpg");
+      color: black;
+  }
+  
+    &--bg3 {
+    background-image: url("../img/btn-mobile-bg3.jpg");
+      color: black;
+  }
+}

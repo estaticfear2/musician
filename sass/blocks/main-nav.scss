@@ -1,0 +1,37 @@
+.main-nav {
+  position: relative;
+  width: 100%;
+  
+  &__toggle {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 41px;
+    height: 4px;
+    border: none;
+    background-color: #bebebe;
+    z-index: 1;
+    
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #bebebe;
+    }
+    
+    &::before {
+      top: -10px;
+    }
+    
+    &::after {
+      bottom: -10px;
+    }
+  }
+  
+  &__list {
+    display: none;
+  }
+}
+
