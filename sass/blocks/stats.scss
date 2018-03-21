@@ -1,10 +1,12 @@
 .stats {
   display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
   
   &__item {
     display: flex;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 7px;
     font-size: 6px;
     color: #979898;
   }
@@ -15,6 +17,6 @@
   
   &__icon {
     fill: #979898;
-    padding-right: 10px;
+    padding-right: 7px;
   }
 }

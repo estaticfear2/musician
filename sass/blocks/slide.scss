@@ -1,0 +1,47 @@
+.slide {
+  padding: 97px 45px 79px;
+  text-align: center;
+  
+  &--1 {
+    background-color: #383939;
+    background-image: url("../img/note-mobile-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  &__header {
+    margin-bottom: 14px;
+    position: relative;
+    font-family: $dosis;
+    font-size: 8.5px;
+    line-height: 13px;
+    letter-spacing: 0.118em;
+    color: #ffffff;
+    text-transform: uppercase;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 15px;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/note.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  &__text {
+    margin-bottom: 16px;
+    padding: 0 15px;
+    letter-spacing: 0.018em;
+    color: #7a8083;
+  }
+  
+  &__descr {
+    color: #565e61;
+  }
+}

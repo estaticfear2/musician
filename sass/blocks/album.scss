@@ -2,6 +2,103 @@
   padding: 0 24px 0 25px;
   text-align: left;
   
+  &--bg {
+    position: relative;
+    padding: 0;
+    margin-bottom: 26px;
+    min-height: 211px;
+    overflow: hidden;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 192px 221px;
+      background-position: top center;
+      opacity: 0.24;
+      z-index: -1;
+      transition: 0.4s;
+    }
+    
+    &:hover::before {
+      opacity: 0.28;
+      transition: 0.3s;
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -26px;
+      right: 0;
+      font-family: $opensansbold;
+      font-size: 41px;
+      line-height: 71px;
+      opacity: 0.17;
+    }
+  }
+  
+  &--bg1 {
+    &::before {
+      background-image: url("../img/album1.jpg");
+    }
+    
+    &::after {
+      content: "01";
+    }
+  }
+  
+  &--bg2 {
+    &::before {
+      background-image: url("../img/album2.jpg");
+    }
+    
+    &::after {
+      content: "02";
+    }
+  }
+  
+  &--bg3 {
+    &::before {
+      background-image: url("../img/album3.jpg");
+    }
+    
+    &::after {
+      content: "03";
+    }
+  }
+  
+  &--bg4 {
+    &::before {
+      background-image: url("../img/album4.jpg");
+    }
+    
+    &::after {
+      content: "04";
+    }
+  }
+  
+  &--bg5 {
+    &::before {
+      background-image: url("../img/album5.jpg");
+    }
+    
+    &::after {
+      content: "05";
+    }
+  }
+  
+  &--bg6 {
+    &::before {
+      background-image: url("../img/album6.jpg");
+    }
+    
+    &::after {
+      content: "06";
+    }
+  }
+  
   &__descr-wrapper {
     width: 260px;
     padding: 14px 20px 0 18px;
@@ -31,6 +128,10 @@
     font-family: $opensansbold;
     font-size: 7.6px;
     text-transform: uppercase;
+  }
+  
+  &__title--white {
+    color: #ffffff;
   }
   
   &__info {
@@ -63,6 +164,13 @@
     text-align: left;
   }
   
+  &__footer-wrap {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 28px;
+    margin-bottom: 18px;
+  }
+  
   &__play-btn {
     margin: 0 auto;
     margin-top: 23px;
@@ -73,10 +181,15 @@
   }
   
   &__itunes-btn {
-    margin-top: 27px;
+    margin-top: 0;
     
     &.btn::before {
       right: 17px;
     }
   }
+  
+  &__item {
+    padding: 15px 22px 12px 23px;
+  }
+  
 }
