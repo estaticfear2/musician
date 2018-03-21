@@ -1,0 +1,20 @@
+.stats {
+  display: flex;
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 6px;
+    color: #979898;
+  }
+  
+  &__listening {
+    padding-left: 27px;
+  }
+  
+  &__icon {
+    fill: #979898;
+    padding-right: 10px;
+  }
+}

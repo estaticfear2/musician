@@ -1,0 +1,24 @@
+.video {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  
+  &__content {
+    width: 300px;
+    height: 211px;
+    background-repeat: no-repeat;
+    background-size: 300px;
+  }
+  
+  &__content--1 {
+    background-image: url("../img/later-composition-mobile-video1.jpg");
+  }
+  
+  &__content--2 {
+    background-image: url("../img/later-composition-mobile-video2.jpg");
+  }
+  
+  &__content--3 {
+    background-image: url("../img/later-composition-mobile-video3.jpg");
+  }
+}

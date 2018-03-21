@@ -20,11 +20,35 @@
   
   &--bg2 {
     background-image: url("../img/btn-mobile-bg2.jpg");
-      color: black;
+    color: black;
   }
   
-    &--bg3 {
+  &--bg3 {
     background-image: url("../img/btn-mobile-bg3.jpg");
-      color: black;
+    color: black;
+  }
+  
+  &--bg-transp {
+    position: relative;
+    padding: 9px 7px 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.44);
+    background-color: transparent;
+    font-family: $opensansbold;
+    font-size: 7px;
+    color: black;
+    text-transform: none;
+    box-sizing: border-box;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 11px;
+      right: 21px;
+      width: 3px;
+      height: 6px;
+      background-image: url("../img/icon-arrow-next.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }

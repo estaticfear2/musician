@@ -1,6 +1,13 @@
 .album {
   padding: 0 24px 0 25px;
-  margin-bottom: 51px;
+  text-align: left;
+  
+  &__descr-wrapper {
+    width: 260px;
+    padding: 14px 20px 0 18px;
+    margin: 0 auto;
+    background-color: #f5f6f6;
+  }
   
   &__year {
     font-family: $opensansbold;
@@ -13,6 +20,10 @@
     border: none;
     height: 1px;
     background-color: black;
+  }
+  
+  &__line--width {
+    width: 196px;
   }
   
   &__title {
@@ -29,14 +40,43 @@
     letter-spacing: 0.018em;
   }
   
+  &__info--tours {
+    margin-top: 35px;
+  }
+  
+  &__info--margin {
+    margin-bottom: 16px;
+  }
+  
   &__descr {
     letter-spacing: 0.018em;
     color: #aaaaaa;
     text-align: justify;
   }
   
+  &__descr--tours {
+    width: 200px;
+    text-align: left;
+  }
+  
+  &__descr--left {
+    text-align: left;
+  }
+  
   &__play-btn {
     margin: 0 auto;
     margin-top: 23px;
+  }
+  
+  &__buy-btn {
+    margin-top: 51px;
+  }
+  
+  &__itunes-btn {
+    margin-top: 27px;
+    
+    &.btn::before {
+      right: 17px;
+    }
   }
 }
