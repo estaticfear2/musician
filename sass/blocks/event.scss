@@ -1,0 +1,55 @@
+.event {
+  position: relative;
+  text-align: left;
+  
+  &--line::after {
+    content: "";
+    position: absolute;
+    bottom: -92px;
+    left: 93px;
+    width: 0.5px;
+    height: 83px;
+    background-color: #000000;
+  }
+  
+  &__title {
+    margin-bottom: 4px;
+    font-family: $opensans;
+    font-size: 11.5px;
+    line-height: 12px;
+    letter-spacing: 0.018em;
+    text-align: left;
+  }
+  
+  &__line {
+    margin: 0;
+    border: none;
+    height: 1px;
+    width: 63px;
+    background-color: black;
+  }
+  
+  &__text {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 37px;
+    letter-spacing: 0.018em;
+    color: #7a8083;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -34px;
+      left: 18px;
+      width: 0.5px;
+      height: 26px;
+      background-color: #000000;
+    }
+  }
+  
+  &__date {
+    font-family: $opensansbold;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.65);
+  }
+}

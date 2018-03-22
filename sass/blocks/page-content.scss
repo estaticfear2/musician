@@ -3,7 +3,6 @@
   padding-bottom: 174px;
   background: url("../img/discography-bg.jpg") center bottom no-repeat;
   background-size: 1000px;
-  
 }
 
 .page-content__tours {
@@ -24,4 +23,26 @@
 .page-content__last-album {
   width: 192px;
   margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.page-content__upcoming {
+  padding-top: 29px;
+  margin-bottom: 5px;
+  background: url("../img/events-bg.jpg") 38% top no-repeat;
+  background-size: cover;
+  padding-bottom: 81px;
+}
+
+.page-content__history {
+  min-height: 518px;
+  padding-top: 35px;
+  background: url("../img/history-bg.jpg") 50% top no-repeat;
+  background-size: cover;
+}
+
+.page-content__contacts {
+  padding-left: 75px;
+  background: url("../img/contact-mobile-bg.jpg") 50% top no-repeat;
+  background-size: cover;
 }

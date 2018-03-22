@@ -8,9 +8,11 @@
     margin-bottom: 11px;
     font-family: $dosis;
     font-size: 25.25px;
+    font-weight: 400;
     line-height: 29.64px;
     letter-spacing: 0.118em;
     text-transform: uppercase;
+    z-index: 1;
     
     &::before {
       content: "";
@@ -42,6 +44,32 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-image: linear-gradient(to bottom, #779da6, #98b5ae);
+    z-index: inherit;
+  }
+  
+  &__title--upcoming {
+    color: #42717e;
+    
+    &::before {
+      width: 250px;
+      left: 53%;
+    }
+  }
+  
+  &__title--history {
+    color: #5b5c5a;
+    
+    &::before {
+      width: 140px;
+    }
+  }
+  
+  &__title--contacts {
+    color: #454545;
+    
+    &::before {
+      width: 140px;
+    }
   }
   
   &__descr {
@@ -58,6 +86,10 @@
     margin-bottom: 30px;
   }
   
+  &__descr--history {
+    padding: 0 23px;
+  }
+  
   &__item {
     margin-bottom: 51px;
   }
@@ -71,5 +103,8 @@
     margin-bottom: 0;
   }
   
-
+  &__item--upcoming {
+    margin-bottom: 60px;
+    padding: 29px 30px 0 75px;
+  }
 }
