@@ -1,0 +1,59 @@
+.contact-form {
+  width: 69.0909%;
+  
+  &__field-wrap {
+    position: relative;
+    margin-bottom: 18px;
+  }
+  
+  &__field-wrap--no-mb {
+    margin-bottom: 10px;
+  }
+  
+  &__label {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    line-height: 0.018em;
+    color: #7a8083;
+  }
+  
+  &__text-field {
+    min-height: 18px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 0.5px solid #000000;
+    line-height: 18px;
+    background-color: transparent;
+  }
+  
+  &__textarea {
+    height: 18px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 0.5px solid #000000;
+    line-height: 18px;
+    background-color: transparent;
+    resize: none;
+    
+    &::-ms-clear {
+      display: none;
+    }
+  }
+  
+  &__btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-family: $opensansbold;
+    font-size: 10px;
+    line-height: 12.25px;
+    text-transform: uppercase;
+  }  
+  
+}
