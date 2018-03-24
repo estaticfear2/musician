@@ -4,8 +4,8 @@
   
   &__toggle {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 37px;
+    right: 34px;
     width: 41px;
     height: 4px;
     border: none;
@@ -22,16 +22,36 @@
     }
     
     &::before {
-      top: -10px;
+      top: -12px;
     }
     
     &::after {
-      bottom: -10px;
+      bottom: -12px;
     }
   }
   
   &__list {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  
+  .main-nav {
+    
+    &__toggle {
+      top: 50px;
+      right: 40px;
+      width: 45px;
+
+      &::before {
+        top: -14px;
+      }
+
+      &::after {
+        bottom: -14px;
+      }
+    }
   }
 }
 

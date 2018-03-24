@@ -10,12 +10,25 @@
     bottom: 20px;
     margin: 0;
     padding: 0;
-    width: 4.5px;
-    height: 7px;
-    border: 1.5px solid white;
-    border-top: none;
-    border-bottom: none;
+    border: 0 solid white;
     background-color: transparent;
+    
+    &--stop {
+      width: 4.5px;
+      height: 7px;
+      border-left-width: 1.5px;
+      border-right-width: 1.5px;
+    }
+    
+    &--play {
+      width: 0;
+      height: 0;
+      border: 6.5px solid transparent;
+      border-bottom-width: 4px;
+      border-top-width: 4px;
+      border-left-color: white;
+      
+    }
   }
   
   &__scale {

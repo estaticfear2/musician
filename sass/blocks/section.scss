@@ -96,7 +96,7 @@
   
   &__descr--history {
     padding: 0 23px;
-    margin-bottom: 0;
+    margin-bottom: 46px;
   }
   
   &__descr--contacts {
@@ -123,5 +123,34 @@
   &__item--upcoming {
     margin-bottom: 60px;
     padding: 29px 30px 0 75px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  
+  .section {
+    
+    &__title {
+      margin-bottom: 15px;
+      padding-left: 12px;
+      font-size: 37.22px;
+      line-height: 43.7px;
+      
+      &::before {
+        width: 370px;
+      }
+    }
+    
+    &__title--discography:before {
+      margin-left: 7px;
+    }
+    
+    &__descr {
+      margin-bottom: 76px;
+      padding-left: 16%;
+      padding-right: 13.9%;
+      font-size: 10.5px;
+      line-height: 17.9px;
+    }
   }
 }

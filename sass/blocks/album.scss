@@ -108,7 +108,7 @@
   
   &__year {
     font-family: $opensansbold;
-    font-size: 7.6px;
+//    font-size: 7.6px;
     color: rgba(0, 0, 0, 0.65);
   }
   
@@ -191,5 +191,34 @@
   &__item {
     padding: 15px 22px 12px 23px;
   }
-  
+}
+
+@media (min-width: $tablet-width) {
+  .album {
+    padding: 0 17.708% 0 16.5%;
+    
+    &__year {
+      letter-spacing: 0.018em
+    }
+    
+    &__line {
+      margin-top: 5px;
+    }
+    
+    &__title {
+      margin-top: 1px;
+      margin-bottom: 27px;
+      font-size: 10.5px;
+    }
+    
+    &__info {
+      font-size: 17px;
+      letter-spacing: 0.018em;
+    }
+    
+    &__descr {
+      font-size: 10.5px;
+      letter-spacing: 0.018em;
+    }
+  }
 }

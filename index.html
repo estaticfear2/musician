@@ -25,15 +25,18 @@
     </nav>
     <div class="hero page-header__hero">
       <picture>
+       
 <!--
         <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-
-        <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg">
-        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
 -->
-        <img class="hero__img" src="img/header-mobile-bg.png" width="320" alt="Hero img">
+
+        <source media="(min-width: 1200px)" srcset="img/header-desktop-bg.jpg 1x, img/header-desktop-bg@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/header-tablet-bg.jpg 1x, img/header-tablet-bg@2x.jpg 2x">
+        
+        
+        <img class="hero__img" src="img/header-mobile-bg.jpg" srcset="img/header-mobile-bg@2x.jpg 2x" width="320" alt="Index img">
       </picture>
       <img class="logo hero__logo" src="img/header-logo-mobile.png" alt="Site logo">
     </div>
@@ -123,7 +126,7 @@
           <video class="video__content video__content--1" width="300" height="211">
           </video>
           <div class="video-controls">
-            <button class="video-controls__btn video-controls__btn--play" type="button">
+            <button class="video-controls__btn video-controls__btn--stop" type="button">
             </button>
             
             <div class="video-controls__scale">
@@ -344,53 +347,66 @@
     <section class="section page-content__history">
       <h2 class="section__title section__title--history">History</h2>
       <p class="section__descr section__descr--history">In 2008, lead singer Dan Reynolds met drummer Andrew Tolman at Brigham Young University where they were both students.Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated from Berklee College of Music</p>
-    </section>
-    
-    <footer class="page-footer">
-      <div class="page-footer__wrap">
-        <h2 class="page-footer__title">Contact</h2>
-        <p class="page-footer__descr">Canada Island, Division No. 23, Unorganized, MB, Canada</p>
-        <a class="page-footer__tel" href="tel:+1(778) 288 5180" >Tel. +1(778) 288 5180</a>
-        <div class="page-footer__contacts-wrap">
-          <form class="contact-form section__form" action="#" method="get">
-            <div class="contact-form__field-wrap">
-              <label for="name" class="contact-form__label">Name</label>
-              <input class="contact-form__text-field" type="text" id="name">
-            </div>
-            <div class="contact-form__field-wrap">
-              <label class="contact-form__label" for="mail">E-mail</label>
-              <input class="contact-form__text-field" type="email" id="mail">
-            </div>
-            <div class="contact-form__field-wrap contact-form__field-wrap--no-mb">
-              <label for="message" class="contact-form__label">Message</label>
-              <textarea class="contact-form__textarea" id="message"></textarea>
-            </div>
-            <button class="contact-form__btn" type="submit">Send</button>
-          </form>
-
-          <ul class="social">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="8.5" height="8.5"><use xlink:href="#icon-fb"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">  
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="9.5" height="9.5"><use xlink:href="#icon-inst"></use></svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="8" height="6.5"><use xlink:href="#icon-tw"></use></svg>
-              </a>
-            </li>
-          </ul>
+      
+      <div class="hist-slider">
+        <div class="hist-slider__controls">
+          <button class="hist-slider__toggle">April 11</button>
+          <button class="hist-slider__toggle hist-slider__toggle--active">May 09</button>
+          <button class="hist-slider__toggle">June 09</button>
         </div>
+        <ul class="hist-slider__list">
+          <li class="hist-slider__item">
+            Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.
+          </li>
+        </ul>
+
       </div>
-    </footer>
-    
+    </section>    
     
   </main>
+  
+  <footer class="page-footer">
+    <div class="page-footer__wrap">
+      <h2 class="page-footer__title">Contact</h2>
+      <p class="page-footer__descr">Canada Island, Division No. 23, Unorganized, MB, Canada</p>
+      <a class="page-footer__tel" href="tel:+1(778) 288 5180" >Tel. +1(778) 288 5180</a>
+      <div class="page-footer__contacts-wrap">
+        <form class="contact-form section__form" action="#" method="get">
+          <div class="contact-form__field-wrap">
+            <label for="name" class="contact-form__label">Name</label>
+            <input class="contact-form__text-field" type="text" id="name">
+          </div>
+          <div class="contact-form__field-wrap">
+            <label class="contact-form__label" for="mail">E-mail</label>
+            <input class="contact-form__text-field" type="email" id="mail">
+          </div>
+          <div class="contact-form__field-wrap contact-form__field-wrap--no-mb">
+            <label for="message" class="contact-form__label">Message</label>
+            <textarea class="contact-form__textarea" id="message"></textarea>
+          </div>
+          <button class="contact-form__btn" type="submit">Send</button>
+        </form>
+
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon" width="8.5" height="8.5"><use xlink:href="#icon-fb"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">  
+            <a href="#" class="social__link">
+              <svg class="social__icon" width="9.5" height="9.5"><use xlink:href="#icon-inst"></use></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon" width="8" height="6.5"><use xlink:href="#icon-tw"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -13,3 +13,10 @@ img {
 .visually-hidden {
   @include visually-hidden;
 }
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 10.5px;
+    line-height: 18.2px;
+  }
+}
