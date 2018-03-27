@@ -1,8 +1,13 @@
+.page-content {
+  margin-bottom: 39px;
+}
+
 .page-content__discography {
   margin-bottom: 50px;
   padding-bottom: 174px;
   background: url("../img/discography-bg.jpg") center bottom no-repeat;
   background-size: 1000px;
+  text-align: center;
 }
 
 .page-content__tours {
@@ -10,14 +15,16 @@
   padding-bottom: 24px;
   background: url("../img/concert-tours-mobile-bg.jpg") center bottom no-repeat;
   background-size: 375px;
+  text-align: center;
 }
 
 .page-content__compositions {
   margin-bottom: 38px;
+  text-align: center;
 }
 
 .page-content__slider {
-  margin-bottom: 12px;
+  margin-bottom: 27px;
 }
 
 .page-content__last-album {
@@ -27,8 +34,9 @@
 }
 
 .page-content__upcoming {
-  padding-top: 29px;
   margin-bottom: 5px;
+  padding-left: calc(100% - 298px);
+  padding-top: 29px;
   background: url("../img/events-bg.jpg") 38% top no-repeat;
   background-size: cover;
   padding-bottom: 81px;
@@ -36,15 +44,16 @@
 
 .page-content__history {
   min-height: 518px;
-  margin-bottom: 39px;
   padding-top: 35px;
   background: url("../img/history-bg.jpg") 50% top no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   
   .page-content {
+      margin-bottom: 90px;
     
     &__discography {
       margin-bottom: 75px;
@@ -70,11 +79,22 @@
     &__last-album {
       width: auto;
       margin: 0;
+      margin-bottom: 93px;
       padding-left: 10.35159%;
       padding-right: 11.45833%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+    }
+    
+    &__upcoming {
+      margin-bottom: 43px;
+      padding-left: 41.276%;
+      padding-bottom: 65px;
+    }
+    
+    &__history {
+      min-height: 794px;
     }
   }
 }

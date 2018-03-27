@@ -57,3 +57,35 @@
     padding-top: 35px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 685px;
+    background: url("../img/contact-tablet-bg.jpg") 22% bottom no-repeat;
+    background-size: 100%;
+    
+    &__wrap {
+      width: 52.7344%;
+      margin-left: 33.3384%;
+    }
+    
+    &__title {
+      font-size: 37.335px;
+      line-height: 43.83px;
+    }
+    
+    &__descr {
+      margin-top: 15px;
+      font-size: 10.35px;
+      line-height: 17.945px;
+    }
+    
+    &__tel {
+      font-size: 10.35px;
+    }
+    
+    &__contacts-wrap {
+      padding-top: 58px;
+    }
+  }
+}

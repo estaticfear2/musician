@@ -8,3 +8,18 @@
   list-style: none;
   border-left: 1px solid #000000;
 }
+
+@media (min-width: $tablet-width) {
+  
+  .social {
+    margin: 11px 0 18px;
+    padding: 0 2px 0 19px;;
+  
+    &__icon {
+      width: 14px;
+      height: auto;
+    }
+  }
+  
+  
+}

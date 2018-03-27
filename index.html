@@ -38,7 +38,12 @@
         
         <img class="hero__img" src="img/header-mobile-bg.jpg" srcset="img/header-mobile-bg@2x.jpg 2x" width="320" alt="Index img">
       </picture>
-      <img class="logo hero__logo" src="img/header-logo-mobile.png" alt="Site logo">
+      <picture>
+        
+        <source media="(min-width: 768px)" srcset="img/header-logo-tablet.png 1x, img/header-logo-tablet@2x.png 2x">
+        
+        <img class="logo hero__logo" src="img/header-logo-mobile.png"  alt="Site logo">
+      </picture>
     </div>
   </header>
   
@@ -272,7 +277,7 @@
           <hr class="album__line">
           <h3 class="album__title album__title--white">Chill Nation</h3>
           <h4 class="album__info">James Bay - Let It Go (Bearson Remix)</h4>
-          <p class="album__descr album__descr--left">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben Howard, James Bay hails from the North Hertf shire market town of Hitchin. Bay honed his skills regionally, eventually</p>
+          <p class="album__descr album__descr--left album__descr--margin-2x">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben Howard, James Bay hails from the North Hertf shire market town of Hitchin. Bay honed his skills regionally, eventually</p>
         </div>
       </div>    
       
@@ -282,7 +287,7 @@
           <hr class="album__line">
           <h3 class="album__title album__title--white">Chill Nation</h3>
           <h4 class="album__info">Smoke and Mirrors</h4>
-          <p class="album__descr album__descr--left">Hard Rock Cafe teamed with the band, granting them the first ever full access to take control of Hard Rock Cafe's internal video system (more than 20,000 screens at all 151 locations worldwide)</p>
+          <p class="album__descr album__descr--left album__descr--margin-1x">Hard Rock Cafe teamed with the band, granting them the first ever full access to take control of Hard Rock Cafe's internal video system (more than 20,000 screens at all 151 locations worldwide)</p>
         </div>
       </div>
       
@@ -292,7 +297,7 @@
           <hr class="album__line">
           <h3 class="album__title album__title--white">Chill Nation</h3>
           <h4 class="album__info">It Comes Back to You</h4>
-          <p class="album__descr album__descr--left">In 2015 a world tour, entitled the Smoke and Mirrors Tour is scheduled in promotion of the world-wide release of Smoke and Mirrors.</p>
+          <p class="album__descr album__descr--left album__descr--margin-1x">In 2015 a world tour, entitled the Smoke and Mirrors Tour is scheduled in promotion of the world-wide release of Smoke and Mirrors.</p>
         </div>
       </div> 
       
@@ -302,7 +307,7 @@
           <hr class="album__line">
           <h3 class="album__title album__title--white">Chill Nation</h3>
           <h4 class="album__info">Let It Go (Bearson Remix)</h4>
-          <p class="album__descr album__descr--left">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben Howard, James Bay hails from the North Hertf shire market town of Hitchin.</p>
+          <p class="album__descr album__descr--left album__descr--margin-1x">A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance, and Ben Howard, James Bay hails from the North Hertf shire market town of Hitchin.</p>
         </div>
       </div> 
       
@@ -312,7 +317,7 @@
           <hr class="album__line">
           <h3 class="album__title album__title--white">Chill Nation</h3>
           <h4 class="album__info">I Don't Mind</h4>
-          <p class="album__descr album__descr--left">Hell and Silence is an EP by Las Vegas rock group Imagine Dragons, released in March 2010 in the United States. It was recorded at Battle Born Studios.[1] All songs were written by Imagine Dragons and self-produced. The EP was in part mixed</p>
+          <p class="album__descr album__descr--left album__descr--margin-1x">Hell and Silence is an EP by Las Vegas rock group Imagine Dragons, released in March 2010 in the United States. It was recorded at Battle Born Studios.[1] All songs were written by Imagine Dragons and self-produced. The EP was in part mixed</p>
         </div>
       </div> 
       
@@ -322,7 +327,7 @@
           <hr class="album__line">
           <h3 class="album__title album__title--white">Chill Nation</h3>
           <h4 class="album__info">Smoke + Mirrors</h4>
-          <p class="album__descr album__descr--left">A soulful singer/songwriter from a small English</p>
+          <p class="album__descr album__descr--left album__descr--margin-1x">A soulful singer/songwriter from a small English</p>
         </div>
       </div>    
       
@@ -330,13 +335,13 @@
     
     <section class="section page-content__upcoming">
       <h2 class="section__title section__title--upcoming">Upcoming Events</h2>
-      <div class="event event--line section__item section__item--upcoming">
+      <div class="event event--line section__item--upcoming">
         <h3 class="event__title">Smoke + Mirrors Tour</h3>
         <hr class="event__line">
         <p class="event__text">2-2-15 Hokukoryokuchi, Konohana Ward,<br> 554-0042 Osaka Prefecture Osaka</p>
         <time class="event__date">01.04.2015</time>
       </div>
-      <div class="event section__item section__item--upcoming">
+      <div class="event section__item--upcoming">
         <h3 class="event__title">Smoke + Mirrors Tour</h3>
         <hr class="event__line">
         <p class="event__text">When the last-minute request is for a focus group, it’s usually a sign that he request originated in Marketing. When Web sites are being designed, thefolks inMarketing often feel like they don’t have much clout. Even though they’re the<br> ones who spend the most time trying to figure out who the site’s audiences and what they want, the designers and developers are the ones with most</p>
@@ -350,9 +355,11 @@
       
       <div class="hist-slider">
         <div class="hist-slider__controls">
-          <button class="hist-slider__toggle">April 11</button>
+          <button class="hist-slider__toggle hist-slider__toggle--line-before">Mar 16</button>
+          <button class="hist-slider__toggle">Apr 11</button>
           <button class="hist-slider__toggle hist-slider__toggle--active">May 09</button>
-          <button class="hist-slider__toggle">June 09</button>
+          <button class="hist-slider__toggle hist-slider__toggle--line-before">Jun 06</button>
+          <button class="hist-slider__toggle">Jul 25</button>
         </div>
         <ul class="hist-slider__list">
           <li class="hist-slider__item">

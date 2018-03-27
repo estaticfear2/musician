@@ -54,6 +54,37 @@
     font-size: 10px;
     line-height: 12.25px;
     text-transform: uppercase;
-  }  
+  }
+}
+
+@media (min-width: $tablet-width) {
   
+  .contact-form {
+    
+    &__field-wrap {
+      margin-bottom: 33px;
+      
+      &--no-mb {
+        margin-bottom: 17px;
+      }
+    }
+    
+    &__label {
+      font-size: 10.35px;
+    }
+    
+    &__text-field {
+      line-height: 21px;
+      min-height: 21px;
+    }
+    
+    &__textarea {
+      line-height: 21px;
+      min-height: 21px;
+    }
+    
+    &__btn {
+      font-size: 14.79px;
+    }
+  }
 }

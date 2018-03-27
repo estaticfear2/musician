@@ -60,3 +60,66 @@
     color: #5a5a58;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .hist-slider {
+    
+    &__controls {
+      width: 1324px;
+      left: calc(50% - 664px);
+    }
+    
+    &__toggle {
+      position: relative;
+      width: 137px;
+      font-size: 26.5px;
+      line-height: 44.28px;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -111px;
+        width: 109.5px;
+        height: 1px;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.28);
+      }
+      
+      &--line-before::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -111px;
+        width: 109.5px;
+        height: 1px;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.28);
+      }
+      
+      &--active::before,
+      &--active::after {
+        width: 6px;
+        height: 6px;
+        left: -24px;
+        cursor: default;
+      }
+        
+      &--active::after {
+        left: inherit;
+        right: -20px;
+      }
+    }
+    
+    &__list {
+      padding-top: 7.6823%;
+    }
+    
+    &__item {
+      width: 160px;
+      padding-left: 4px;
+      font-size: 10.5px;
+      line-height: 14.4px;
+    }
+  }
+}

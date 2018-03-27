@@ -13,3 +13,12 @@
     transform: translateX(-50%);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .hero {
+    
+    &__logo {
+      width: 53%;
+    }
+  }
+}

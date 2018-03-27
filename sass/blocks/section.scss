@@ -1,5 +1,4 @@
 .section {
-  text-align: center;
   
   &--text-left {
     text-align: left;
@@ -122,8 +121,11 @@
   }
   
   &__item--upcoming {
-    margin-bottom: 60px;
-    padding: 29px 30px 0 75px;
+    padding: 29px 30px 0 0;
+    
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -159,6 +161,20 @@
       }
     }
     
+    &__title--upcoming {
+      margin-bottom: 43px;
+      padding-left: 0;
+    }
+    
+    &__title--history {
+      margin-bottom: 17px;
+      padding-left: 0;
+      
+      &::before {
+        width: 210px;
+      }
+    }
+    
     &__descr {
       margin-bottom: 76px;
       padding-left: 16%;
@@ -176,6 +192,12 @@
       margin-bottom: 80px;
     }
     
+    &__descr--history {
+      margin-bottom: 111px;
+      padding-left: 10.67%;
+      padding-right: 10.1%;
+    }
+    
     &__item {
       margin-bottom: 67px;
       padding: 0 17.708% 0 16.5%;
@@ -190,6 +212,10 @@
       margin-bottom: 28px;
       padding-left: 21.1588%;
       padding-right: 19.2057%;
+    }
+    
+    &__item--upcoming:not(:last-child) {
+      margin-bottom: 107px;
     }
   }
 }

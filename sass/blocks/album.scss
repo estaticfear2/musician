@@ -250,6 +250,14 @@
       letter-spacing: 0.018em;
     }
     
+    &__descr--margin-1x {
+      margin-top: 41px;
+    }
+    
+    &__descr--margin-2x {
+      margin-top: 24px;
+    }  
+    
     &__buy-btn {
       margin-top: 20px;
     }
@@ -288,7 +296,7 @@
     }
     
     &__item {
-      padding: 21px 27px 43px 26px;
+      padding: 21px 27px 29px 26px;
     }
   }
 }
