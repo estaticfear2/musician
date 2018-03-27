@@ -45,3 +45,31 @@
     color: #565e61;
   }
 }
+
+@media (min-width: $tablet-width) {
+  
+  .slide {
+    padding: 159px 45px 119px;
+    
+    &--1 {
+      background-image: url("../img/note-tablet-bg.jpg");
+    }
+    
+    &__header {
+      margin-bottom: 25px;
+      font-size: 13.825px;
+      line-height: 19.64px;
+    
+      &::before {
+        top: -52px;
+        width: 100px;
+        height: 22px;
+      }
+    }
+    
+    &__text {
+      margin-bottom: 44px;
+      padding: 0 21.5%;
+    }
+  }
+}

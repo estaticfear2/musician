@@ -109,6 +109,7 @@
   
   &__item {
     margin-bottom: 51px;
+    padding: 0 24px 0 25px;
   }
   
   &__item--video {
@@ -145,12 +146,50 @@
       margin-left: 7px;
     }
     
+    &__title--tours {
+      margin-bottom: 20px;
+    }
+    
+    &__title--compositions {
+      margin-bottom: 19px;
+      padding-left: 20px;
+      
+      &::before {
+        width: 450px;
+      }
+    }
+    
     &__descr {
       margin-bottom: 76px;
       padding-left: 16%;
       padding-right: 13.9%;
       font-size: 10.5px;
       line-height: 17.9px;
+    }
+    
+    &__descr--tours {
+      padding-left: 8.6%;
+      padding-right: 7.8125%;
+    }
+    
+    &__descr--compositions {
+      margin-bottom: 80px;
+    }
+    
+    &__item {
+      margin-bottom: 67px;
+      padding: 0 17.708% 0 16.5%;
+    }
+    
+    &__item--tours {
+      margin-top: 127px;
+      margin-bottom: 0;
+    }
+    
+    &__item--video {
+      margin-bottom: 28px;
+      padding-left: 21.1588%;
+      padding-right: 19.2057%;
     }
   }
 }

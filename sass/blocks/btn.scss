@@ -52,3 +52,23 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  
+  .btn {
+    width: 147px;
+    padding: 10px 0 14px;
+    
+    &--bg-transp {
+      padding: 11px 10px 12px 0;
+      font-size: 10.5px;
+      
+      &::before {
+        top: 17px;
+        right: 34px;
+      }
+    }
+  }
+  
+  
+}

@@ -41,3 +41,40 @@
   background: url("../img/history-bg.jpg") 50% top no-repeat;
   background-size: cover;
 }
+
+@media (min-width: $tablet-width) {
+  
+  .page-content {
+    
+    &__discography {
+      margin-bottom: 75px;
+      padding-bottom: 226px;
+      background-size: 1127px;
+    }
+    
+    &__tours {
+      margin-bottom: 71px;
+      padding-bottom: 33px;
+      background-image: url("../img/concert-tours-tablet-bg.jpg");
+      background-size: 769px;
+    }
+    
+    &__compositions {
+      margin-bottom: 86px;
+    }
+    
+    &__slider {
+      margin-bottom: 52px;
+    }
+    
+    &__last-album {
+      width: auto;
+      margin: 0;
+      padding-left: 10.35159%;
+      padding-right: 11.45833%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}

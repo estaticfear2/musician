@@ -20,3 +20,33 @@
     padding-right: 7px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .stats {
+    padding-left: 30px;
+    
+    &__item {
+      padding-right: 15px;
+      font-size: 9.66px;
+    }
+    
+    &__item--listening .stats__icon {
+      width: 10px;
+      height: 12px;
+    }
+    
+    &__item--likes .stats__icon {
+      width: 12px;
+      height: 10.5px;
+    }
+    
+    &__item--downloads .stats__icon {
+      width: 12px;
+      height: auto;
+    }
+    &__item--comments .stats__icon {
+      width: 12px;
+      height: auto;
+    }
+  }
+}
