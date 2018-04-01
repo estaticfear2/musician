@@ -320,6 +320,10 @@
       width: 394px;
     }
     
+    &__line--width {
+      width: 392px;
+    }
+    
     &__title {
       font-size: 14px;
       line-height: 24.27px;
@@ -383,6 +387,10 @@
       width: 600px;
       margin-bottom: 0;
       padding: 29px 60px 0 35px;
+      
+      &--right {
+        order: 1;
+      }
     }
     
     &__desktop-hide {

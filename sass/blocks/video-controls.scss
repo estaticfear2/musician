@@ -82,4 +82,44 @@
 
 @media (min-width: $desktop-width) {
   
+  .video-controls {
+    
+    &__btn {
+      left: 38px;
+      bottom: 37px;
+    }
+    
+    &__btn--stop {
+      width: 10px;
+      height: 13px;
+      border-left-width: 3px;
+      border-right-width: 3px;
+    }
+    
+    &__btn--play {
+      border-width: 11px;
+      border-bottom-width: 7px;
+      border-top-width: 7px;
+    }
+    
+    &__scale {
+      left: 77px;
+      bottom: 41px;
+      width: 405px;
+      height: 2px;
+    }
+    
+    &__toggle {
+      top: -5px;
+      width: 12px;
+      height: 12px;
+    }
+    
+    &__time {
+      bottom: 30px;
+      right: 35px;
+      font-size: 12px;
+      line-height: 24.27px;
+    }
+  }
 }

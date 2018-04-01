@@ -128,8 +128,24 @@
   .hist-slider {
     
     &__toggle {
+      width: 150px;
       font-size: 35.39px;
       line-height: 59.27px;
+    }
+    
+    &__toggle--active {
+      width: 200px;
+    }
+    
+    &__list {
+      padding-top: 82px;
+    }
+    
+    &__item {
+      width: 225px;
+      padding-left: 15px;
+      font-size: 14px;
+      line-height: 19.27px;
     }
   }
 }

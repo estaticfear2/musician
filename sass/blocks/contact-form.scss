@@ -91,4 +91,37 @@
 
 @media (min-width: $desktop-width) {
   
+  .contact-form {
+    
+    &__field-wrap {
+      margin-bottom: 44px;
+      
+      &--no-mb {
+        margin-bottom: 22px;
+      }
+    }
+    
+    &__label {
+      top: 3px;
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+    
+    &__text-field {
+      font-size: 14px;
+      line-height: 30px;
+      min-height: 30px;
+    }
+    
+    &__textarea {
+      font-size: 14px;
+      line-height: 30px;
+      min-height: 30px;
+    }
+    
+    &__btn {
+      font-size: 20px;
+      line-height: 24.27px;
+    }
+  }
 }

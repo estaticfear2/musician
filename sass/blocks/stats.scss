@@ -30,21 +30,21 @@
       font-size: 9.66px;
     }
     
-    &__item--listening .stats__icon {
+    &__item--listening svg {
       width: 10px;
       height: 12px;
     }
     
-    &__item--likes .stats__icon {
+    &__item--likes svg {
       width: 12px;
       height: 10.5px;
     }
     
-    &__item--downloads .stats__icon {
+    &__item--downloads svg {
       width: 12px;
       height: auto;
     }
-    &__item--comments .stats__icon {
+    &__item--comments svg {
       width: 12px;
       height: auto;
     }
@@ -53,4 +53,37 @@
 
 @media (min-width: $desktop-width) {
   
+  .stats {
+    margin-bottom: 3px;
+    padding-left: 35px;
+    
+    &__item {
+      padding-right: 22px;
+      font-size: 12px;
+    }
+    
+    &__item--listening svg {
+      width: 13px;
+      height: 16px;
+    }
+    
+    &__item--likes svg {
+      width: 16px;
+      height: 14px;
+    }
+    
+    &__item--downloads svg {
+      width: 16px;
+      height: 14px;
+    }
+    
+    &__item--comments svg {
+      width: 15px;
+      height: 16px;
+    }
+    
+    &__icon {
+      padding-right: 8px;
+    }
+  }
 }

@@ -90,7 +90,9 @@
       padding: 17px 13px 13px 0;
       
       &::before {
-        top: 25px;
+        width: 5px;
+        height: 10px;
+        top: 24px;
         right: 45px;
       }
     }

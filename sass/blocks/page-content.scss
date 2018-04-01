@@ -102,6 +102,7 @@
 @media (min-width: $desktop-width) {
   
   .page-content {
+    margin-bottom: 259px;
     
     &__discography {
       margin-bottom: 154px;
@@ -138,6 +139,10 @@
       padding-left: 0;
       background-position: top center;
       background-size: 2000px;
+    }
+    
+    &__history {
+      min-height: 1102px;
     }
   }
 }

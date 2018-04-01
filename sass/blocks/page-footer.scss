@@ -93,4 +93,36 @@
 
 @media (min-width: $desktop-width) {
   
+  .page-footer {
+    min-height: 722px;
+    background-image: url("../img/contact-mobile-bg.jpg");
+    background-position: 50% bottom;
+    background-size: 2000px;
+    
+    &__wrap {
+      width: 553px;
+      margin-left: 50%;
+    }
+    
+    &__title {
+      font-size: 50.49px;
+      line-height: 59.27px;
+    }
+    
+    &__descr {
+      margin-top: 21px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+    
+    &__tel {
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+    
+    &__contacts-wrap {
+      padding-top: 74px;
+    }
+  }
 }
