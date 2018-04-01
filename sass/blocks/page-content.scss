@@ -98,3 +98,46 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  
+  .page-content {
+    
+    &__discography {
+      margin-bottom: 154px;
+      padding-bottom: 363px;
+      background-size: 2000px;
+    }
+    
+    &__tours {
+      margin-bottom: 150px;
+      padding-bottom: 247px;
+      background-image: url("../img/concert-tours-desktop-bg.jpg");
+      background-size: 2000px;
+    }
+    
+    &__compositions {
+      margin-bottom: 158px;
+    }
+    
+    &__slider {
+      margin-bottom: 165px;
+    }
+    
+    &__last-album {
+      margin: 0 auto;
+      margin-bottom: 95px;
+      width: 1200px;
+      padding: 0;
+    }
+    
+    &__upcoming {
+      margin-bottom: 113px;
+      padding-top: 202px;
+      padding-bottom: 186px;
+      padding-left: 0;
+      background-position: top center;
+      background-size: 2000px;
+    }
+  }
+}

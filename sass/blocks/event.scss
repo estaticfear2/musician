@@ -86,3 +86,45 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  
+  .event {
+    
+    &--line:after {
+      width: 1px;
+      left: 648px;
+      height: 164px;
+      bottom: -182px;
+    }
+    
+    &__title {
+      margin-bottom: 7px;
+      font-size: 23px;
+      line-height: 24.27px;
+    }
+    
+    &__line {
+      width: 133px;
+      margin-bottom: 11px;
+    }
+    
+    &__text {
+      font-size: 14px;
+      line-height: 24.27px;
+      margin-bottom: 73px;
+      
+      &::after {
+        width: 1px;
+        bottom: -67px;
+        left: 34px;
+        height: 51px;
+      }
+    }
+    
+    &__date {
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+  }
+}

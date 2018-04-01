@@ -73,3 +73,35 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  
+  .slide {
+    padding: 213px 45px 158px;
+    
+    &__header {
+      margin-bottom: 33px;
+      font-family: $dosis;
+      font-size: 18.49px;
+      line-height: 26.27px;
+      
+      &::before {
+        top: -70px;
+        width: 128px;
+        height: 29px;
+      }
+    }
+    
+    &__text {
+      margin-bottom: 58px;
+      padding: 0 310px;
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+    
+    &__descr {
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+  }
+}

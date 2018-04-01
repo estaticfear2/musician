@@ -47,3 +47,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 600px;
+    height: 422px;
+  }
+}

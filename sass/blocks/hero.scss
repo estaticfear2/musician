@@ -1,5 +1,4 @@
 .hero {
-  position: relative;
   
   &__img {
     width: 100%;
@@ -15,10 +14,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  
   .hero {
     
     &__logo {
       width: 53%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
+  .hero {
+    
+    &__img {
+      width: 2000px;
+      height: 1062px;
     }
   }
 }

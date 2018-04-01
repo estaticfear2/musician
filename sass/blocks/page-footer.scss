@@ -59,6 +59,7 @@
 }
 
 @media (min-width: $tablet-width) {
+  
   .page-footer {
     min-height: 685px;
     background: url("../img/contact-tablet-bg.jpg") 22% bottom no-repeat;
@@ -88,4 +89,8 @@
       padding-top: 58px;
     }
   }
+}
+
+@media (min-width: $desktop-width) {
+  
 }

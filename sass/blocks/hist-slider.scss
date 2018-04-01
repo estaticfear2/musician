@@ -123,3 +123,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hist-slider {
+    
+    &__toggle {
+      font-size: 35.39px;
+      line-height: 59.27px;
+    }
+  }
+}

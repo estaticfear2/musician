@@ -289,14 +289,135 @@
       }
     }
     
-    &--bg1 {
-      &::before {
-        background-image: url("../img/album-tablet1.jpg");
+    &__item {
+      padding: 21px 27px 29px 26px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
+  .album {
+    position: relative;
+    
+    &__header {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 502px;
+    }
+    
+    &__header--top {
+      top: 57px;
+    }
+    
+    &__year {
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+    
+    &__line--tours {
+      width: 394px;
+    }
+    
+    &__title {
+      font-size: 14px;
+      line-height: 24.27px;
+    }
+    
+    &__title--white {
+      margin-bottom: 39px;
+    }
+    
+    &__info {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 672px;
+      font-size: 23px;
+      line-height: 35.27px;
+    }
+    
+    &__info--letter-space {
+      margin-bottom: 6px;
+      font-size: 23px;
+    }
+    
+    &__info--line-height {
+      margin-bottom: 7px;
+    }
+    
+    &__info--tours {
+      margin-top: 69px;
+    }
+    
+    &__info--margin {
+      width: 100%;
+      margin-top: 38px;
+      line-height: 24.27px;
+    }
+    
+    &__info--wa {
+      width: auto;
+      line-height: 24.27px;
+    }
+    
+    &__descr {
+      margin-top: 9px;
+      width: 672px;
+      font-size: 14px;
+      line-height: 24.27px;
+      letter-spacing: 0.018em;
+      text-align: left;
+    }
+    
+    &__descr--tours {
+      margin-top: 15px;
+    }
+    
+    &__descr--left {
+      width: 100%;
+      margin-top: 31px;
+    }
+    
+    &__descr-wrapper {
+      width: 600px;
+      margin-bottom: 0;
+      padding: 29px 60px 0 35px;
+    }
+    
+    &__desktop-hide {
+      display: none;
+    }
+    
+    &__play-btn {
+      margin-right: 476px;
+      margin-top: 13px;
+    }
+    
+    &__buy-btn {
+      margin-top: 34px;
+    }
+    
+    &__footer-wrap {
+      margin-top: 56px;
+    }
+    
+    &--bg {
+      margin: 0;
+      margin-bottom: 28px;
+      width: 384px;
+      min-height: 422px;
+      
+      &::after {
+        bottom: -53px;
+        font-size: 82.29px;
+        line-height: 142.66px;
       }
     }
     
     &__item {
-      padding: 21px 27px 29px 26px;
+      padding: 29px 36px 38px 35px;
     }
+    
   }
 }
