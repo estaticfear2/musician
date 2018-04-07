@@ -265,17 +265,27 @@
     
     <section class="slider page-content__slider">
       <div class="slider__list">
-        <div class="slide slide--1 slider__item">
+        <div class="slide slide--1 slider__item slider__item--active" data-index="0">
           <p class="slide__header">In 2008, lead singer Dan Reynolds met<br> drummer Andrew Tolman at Brigham Young University where they were both students</p>
+          <p class="slide__text">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.</p>
+          <p class="slide__descr">- Early years (2008–10)</p>
+        </div>
+        <div class="slide slide--2 slider__item" data-index="1">
+          <p class="slide__header">In 2009, lead singer Dan Reynolds met<br> drummer Andrew Tolman at Brigham Young University where they were both students</p>
+          <p class="slide__text">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.</p>
+          <p class="slide__descr">- Early years (2008–10)</p>
+        </div>
+        <div class="slide slide--3 slider__item" data-index="2">
+          <p class="slide__header">In 2010, lead singer Dan Reynolds met<br> drummer Andrew Tolman at Brigham Young University where they were both students</p>
           <p class="slide__text">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys.</p>
           <p class="slide__descr">- Early years (2008–10)</p>
         </div>
       </div>
       <div class="slider__controls">
         <div class="slider__toggles-list">
-          <button class="slider__toggle slider__toggle--active"></button>
-          <button class="slider__toggle"></button>
-          <button class="slider__toggle"></button>
+          <button type="button" class="slider__toggle slider__toggle--active" data-index="0"></button>
+          <button type="button" class="slider__toggle" data-index="1"></button>
+          <button type="button" class="slider__toggle" data-index="2"></button>
         </div>
         <button class="slider__btn slider__btn--prev"></button>
         <button class="slider__btn slider__btn--next"></button>
@@ -428,5 +438,6 @@
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

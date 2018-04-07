@@ -1,13 +1,61 @@
 .slide {
   padding: 97px 45px 79px;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+  
+  &::before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 33.33333;
+    height: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    z-index: -1;
+    
+  }
+  
+  &::before {
+    left: 33.33333%;
+    background-position: 50% 0;
+    transition-delay: 0.2s;
+  }
+  
+  &::after {
+    left: 66.6666%;
+    background-position: 100% 0;
+    transition-delay: 0.4s;
+  }
   
   &--1 {
     background-color: #383939;
     background-image: url("../img/note-mobile-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
+    &::before,
+    &::after {
+      background-image: url("../img/note-mobile-bg.jpg")
+    }
+  }
+  
+  &--2 {
+    background-image: url("../img/album3.jpg");
+    
+    &::before,
+    &::after {
+      background-image: url("../img/album3.jpg");
+    }    
+  }
+
+  &--3 {
+    background-image: url("../img/album5.jpg");
+    
+    &::before,
+    &::after {
+      background-image: url("../img/album5.jpg");
+    }  
   }
   
   &__header {
@@ -53,6 +101,29 @@
     
     &--1 {
       background-image: url("../img/note-tablet-bg.jpg");
+      
+      &::before,
+      &::after {
+        background-image: url("../img/note-tablet-bg.jpg");
+      }  
+    }
+    
+    &--2 {
+      background-image: url("../img/album-tablet3.jpg");
+      
+      &::before,
+      &::after {
+        background-image: url("../img/album-tablet3.jpg");
+      }  
+    }
+    
+    &--3 {
+      background-image: url("../img/album-tablet5.jpg");
+      
+      &::before,
+      &::after {
+        background-image: url("../img/album-tablet5.jpg");
+      }  
     }
     
     &__header {
@@ -78,6 +149,34 @@
   
   .slide {
     padding: 213px 45px 158px;
+    background-size: cover;
+    
+    &--1 {
+      background-image: url("../img/note-desktop-bg.jpg");
+      
+      &::before,
+      &::after {
+        background-image: url("../img/note-desktop-bg.jpg");
+      }  
+    }
+    
+    &--2 {
+      background-image: url("../img/album-tablet3.jpg");
+      
+      &::before,
+      &::after {
+        background-image: url("../img/album-tablet3.jpg");
+      }  
+    }
+    
+    &--3 {
+      background-image: url("../img/album-tablet5.jpg");
+      
+      &::before,
+      &::after {
+        background-image: url("../img/album-tablet5.jpg");
+      }  
+    }
     
     &__header {
       margin-bottom: 33px;
