@@ -4,35 +4,64 @@
   
   &__toggle {
     position: absolute;
-    top: 37px;
+    top: 26px;
     right: 34px;
     width: 41px;
-    height: 4px;
-    border: none;
-    background-color: #bebebe;
+    height: 28px;
+    padding: 0;
+    border: 4px solid #bebebe;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
     z-index: 1;
     
-    &::before, &::after {
+    &::before {
       content: "";
       position: absolute;
+      top: 8px;
       left: 0;
       width: 100%;
       height: 4px;
       background-color: #bebebe;
     }
-    
-    &::before {
-      top: -12px;
-    }
-    
-    &::after {
-      bottom: -12px;
-    }
   }
   
   &__list {
     @include clear-list;
-    display: none;
+    
+    position: absolute;
+    top: 70px;
+    right: -90%;
+    width: 90%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 8, 15, 0.6);
+    border-radius: 5px;
+    z-index: 1;
+    transition: 0.4s;
+    text-align: center;
+  }
+  
+  &__list--open {
+    right: 0;
+    transition: 0.4s;
+  }
+  
+  &__list--no-js {
+    position: static;
+    width: 100%;
+    padding-top: 70px;
+  }
+  
+  &__link {
+    display: block;
+    padding: 25px;
+    font-family: $dosis;
+    font-size: 16px;
+    letter-spacing: 0.118em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }
 

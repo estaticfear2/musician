@@ -90,7 +90,7 @@
   }
   
   &__descr--compositions {
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
   
   &__descr--history {
@@ -112,12 +112,15 @@
   }
   
   &__item--video {
-    margin-bottom: 22px;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 33px;
   }
   
   &__item--tours {
-    margin-top: 155px;
-    margin-bottom: 0;
+    max-width: 325px;
+    margin: 155px auto 0;
   }
   
   &__item--upcoming {

@@ -1,5 +1,10 @@
 .page-header {
   width: 100%;
+  overflow: hidden;
+  
+  &__hero {
+    position: relative;
+  }
 }
 
 @media (min-width: $tablet-width) {

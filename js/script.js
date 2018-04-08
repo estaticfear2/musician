@@ -46,3 +46,15 @@ togglesList.addEventListener('click', function(evt) {
   setSlide(currentIndex);
   slideIndex = currentIndex;
 });
+
+
+var mainNavList = document.querySelector('.main-nav__list');
+var mainNavToggle = document.querySelector('.main-nav__toggle');
+
+mainNavList.classList.remove('main-nav__list--no-js');
+
+mainNavToggle.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  
+  mainNavList.classList.toggle('main-nav__list--open');
+});
