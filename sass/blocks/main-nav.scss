@@ -70,16 +70,13 @@
   .main-nav {
     
     &__toggle {
-      top: 50px;
+      top: 37px;
       right: 40px;
       width: 45px;
+      height: 31px;
 
       &::before {
-        top: -14px;
-      }
-
-      &::after {
-        bottom: -14px;
+        top: 9px;
       }
     }
   }

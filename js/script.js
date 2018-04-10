@@ -19,14 +19,14 @@ var setSlide = function (index) {
 
 var onSlideChange = function (evt) {
   evt.preventDefault();
-  
+
   removeSlide(slideIndex);
-  
+
   slideIndex = (evt.target.classList.contains('slider__btn--prev')) ? --slideIndex : ++slideIndex;
-  
+
   if (slideIndex < 0) slideIndex = slidesCount;
   if (slideIndex > slidesCount) slideIndex = 0;
-  
+
   setSlide(slideIndex);
 };
 
@@ -35,13 +35,13 @@ next.addEventListener('click', onSlideChange);
 
 togglesList.addEventListener('click', function(evt) {
   evt.preventDefault();
-  
+
   if (evt.target.type !== 'button') return;
-  
+
   var currentIndex = evt.target.getAttribute('data-index');
-  
+
   if (currentIndex == slideIndex) return;
-  
+
   removeSlide(slideIndex);
   setSlide(currentIndex);
   slideIndex = currentIndex;
@@ -55,6 +55,24 @@ mainNavList.classList.remove('main-nav__list--no-js');
 
 mainNavToggle.addEventListener('click', function (evt) {
   evt.preventDefault();
-  
+
   mainNavList.classList.toggle('main-nav__list--open');
+});
+
+
+var histSlider = document.querySelector('.hist-slider');
+var histSliderControls = histSlider.querySelector('.hist-slider__controls');
+var activeToggle = histSliderControls.querySelector('.hist-slider__toggle--active');
+
+histSliderControls.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  
+  if (evt.target.type !== 'button') return;
+  
+  activeToggle.classList.remove('hist-slider__toggle--active');
+  
+  evt.target.classList.add('hist-slider__toggle--active');
+  histSliderControls.style.left += '30px';
+  
+  activeToggle = evt.target;
 });
